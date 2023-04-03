@@ -1,0 +1,22 @@
+.navbar {
+  font-family: var(--mono-font);
+  font-size: 13px;
+  font-weight: 200;
+  padding: 10px;
+}
+
+.nav-link {
+  color: var(--less-medium-grey);
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: var(--green);
+}
+
+.nav-number,
+.navbar-brand,
+.material-icons {
+  color: var(--green);
+}

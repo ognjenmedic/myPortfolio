@@ -1,0 +1,138 @@
+.projects-wrapper {
+  max-width: 1000px;
+  margin: 0 12vw;
+}
+
+.flex {
+  display: flex;
+  min-height: 100vh;
+  height: 100vh;
+  padding: 0;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.numbered-heading {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 10px 0px 40px;
+  width: 100%;
+  font-size: clamp(22px, 4vw, 26px);
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--light-grey);
+  line-height: 1.1;
+}
+
+.projects {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  /* margin: 0 12vw; */
+  width: 100%;
+}
+
+.projects::before {
+  display: inline-flex;
+  position: relative;
+  counter-increment: section 2;
+  content: "0" counter(section) ".";
+  margin-right: 1vh;
+  color: var(--green);
+  font-family: var(--mono-font);
+  font-size: clamp(17px, 3vw, 21px);
+  font-weight: 300;
+}
+
+.project-content {
+  margin-top: 30px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.project-overline {
+  margin: 10px 0px;
+  color: var(--green);
+  font-family: var(--mono-font);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.project-title {
+  color: var(--light-grey);
+  font-size: clamp(24px, 5vw, 28px);
+  font-weight: 600;
+  line-height: 1.1;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.project-title:hover {
+  color: var(--green);
+}
+
+.project-description {
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  transition: var(--transition);
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  border-radius: 5px;
+  background-color: var(--light-navy);
+  color: var(--less-medium-grey);
+  font-size: 15px;
+  font-family: var(--sans-font);
+  text-align: left;
+  margin: 5% auto;
+  font-weight: 300;
+}
+
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  margin: 25px 0px 10px;
+  padding: 0px;
+  list-style: none;
+  justify-content: flex-end;
+  text-align: right;
+  font-family: var(--mono-font);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--less-medium-grey);
+  gap: 3%;
+}
+
+.project-tech-list-health {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  margin: 25px 0px 10px;
+  padding: 0px;
+  list-style: none;
+  justify-content: flex-start;
+  text-align: right;
+  font-family: var(--mono-font);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--less-medium-grey);
+  gap: 3%;
+}
