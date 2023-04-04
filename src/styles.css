@@ -11,6 +11,7 @@
   --green-tint: rgba(100, 255, 218, 0.1);
   --navy-shadow: rgba(2, 12, 27, 0.7);
   --light-navy: #112240;
+  --lightest-navy: #233554;
 }
 
 body {
